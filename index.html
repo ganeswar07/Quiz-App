@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Test your knowledge with this interactive quiz. Answer programming-related questions and see how well you score. Challenge yourself and have fun learning!">
+  <meta name="keywords" content="quiz, programming quiz, interactive questions, coding challenge, git">
+  <meta name="author" content="Ganeswar Sahoo">
+  <!-- Page title -->
+  <title>Quiz App</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="main">
+    <!-- Container for the quiz -->
+    <div class="container" id="container">
+      <!-- Quiz box -->
+      <div class="box" id="box">
+        <!-- Question -->
+        <h2 id="question">Question 1: What is the capital of France?</h2>
+        <!-- Answer options -->
+        <div class="form-check my-4">
+          <input class="form-check-input" type="radio" name="option" id="option1" value="a">
+          <label class="form-check-label" for="option1"> Paris</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="option" id="option2" value="b">
+          <label class="form-check-label" for="option2"> Rome</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="option" id="option3" value="c">
+          <label class="form-check-label" for="option3"> Berlin</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="option" id="option4" value="d">
+          <label class="form-check-label" for="option4"> Madrid</label>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="button-group">
+          <button type="button" class="btn btn-primary" id="previous">Previous</button>
+          <button type="button" class="btn btn-primary" id="next">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript file -->
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

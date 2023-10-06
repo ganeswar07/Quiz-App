@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(164, 202, 202) !important;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 60%;
+  height: auto;
+  border: 1px solid #dee2e6;
+  background-color: #c2c5cb;
+  border-radius: 5px;
+  box-shadow: 0px A0px 10px rgb(72, 69, 69);
+  padding: 20px;
+}
+
+.form-check-input {
+  width: 1.5rem !important ;
+  height: 1.5rem !important ;
+  border: var(--bs-border-width) solid #242526 !important;
+}
+
+.form-check-input:checked {
+  border-color: #0d6efd !important;
+}
+label {
+  margin-inline-start: 11px;
+  font-size: 1.4rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+#resetButton {
+  display: flex;
+  justify-content: end;
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .box {
+    width: max-content;
+  }
+}
